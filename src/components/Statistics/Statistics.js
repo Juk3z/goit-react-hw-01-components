@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => (
     <section className={styles.statistics}>
-        {title.length > 0 ? <h2 className={styles.title}>{title}</h2> : false}
+        {title && <h2 className={styles.title}>{title}</h2>}
 
         <ul className={styles['stat-list']}>
             {stats.map(item =>
